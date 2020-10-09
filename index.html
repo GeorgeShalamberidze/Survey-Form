@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body id="mainmain">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking time and submitting the form</p>
+      <form id="survey-form">
+        
+       <section id="fill-form">
+         <label for="name" id="name-label">Name</label>
+         <input type="text" id="name" class="forms" placeholder="Enter your name" required/>
+         <label for="email" id="email-label">Email</label>
+         <input type="email" id="email" class="forms" placeholder="Enter your Email" required/>
+         <label for="number" id="number-label">Age(optional)</label>
+         <input type="number" id="number" class="forms" placeholder="Age" required min="5" max="65">
+        </section>
+        <br>    
+        <section id="pick-role">
+         <label for="role" id="current-role">What is your type of muisc ?</label>
+         <select id="dropdown" class="forms">
+           <option disabled selected value="">Select type</option>
+           <option value="student">Jazz</option>
+           <option value="full-time-job">Rock</option>
+           <option value="full-time-learner">Hip Hop</option>
+           <option value="none">Funk</option>
+           <option value="other">Elecronic</option>
+         </select>
+        </section>
+        <br>
+        <section class="recommend-friend">
+         <p>Do you consider yourself as an Melomaniac ?</p>
+         <label><input type="radio" id="definitely" name="recommend" value="definitely" checked>Hell Yeah!</label>
+          <label><input type="radio" id="maybe" name="recommend" value="maybe">Nope</label> 
+         <label><input type="radio" id="not-sure" name="recommend" value="not-sure">Give me a break</label>
+        </section>
+        <br>
+        <section id="favorite-feature">
+          <label for="feature-feature" id="feature">Why do you think music is important in our lives ?</label>
+            <select id="feature-pick" class="forms">
+              <option disabled selected value="select-an-option">Select An Option</option>
+              <option value="challenges">Improves Mood</option>
+              <option value="projects">Cultural Language</option>
+              <option value="community">Pleasure</option>
+              <option value="open-source">Lose my Self to Dance!</option>
+          </select>
+        </section>
+        <br>
+        <section class="improve">
+          <p for="improve" id="improve-feature">Which Festival Would you prefer to attend ?</p>     
+          
+          <label><input type="checkbox" id="value" value="value1">Coachella</label>                
+          <label><input type="checkbox" id="value" value="value2">Lollapalooza</label>
+         <label><input type="checkbox" id="value" value="value3">Glastonbuury</label>
+          <label><input type="checkbox" id="value" value="value4">Primavera Sound</label>
+          <label><input type="checkbox" id="value" value="value5">TomorrowLand</label>
+          <label><input type="checkbox" id="value" value="value4">Sziget Festival</label>
+          <label><input type="checkbox" id="value" value="value7">Ultra Music Festival</label>       
+        </section>
+        <br>
+        <section id="message">
+          <label for="msg">Any comments or awesome past experiences ?</label>
+          <textarea id="msg" name="user_message" placeholder="Enter your comments here..."></textarea>
+        </section>
+   
+        <div class="button">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+  </body>
+</html>
