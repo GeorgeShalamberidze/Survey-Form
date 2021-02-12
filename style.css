@@ -52,7 +52,7 @@ body{
   #mainmain{
       max-width: 600px;
       border-radius: 10px;
-      margin: 0 auto;
+      margin: 10px auto;
       border: 2px solid black;
       -webkit-box-shadow: 0px 1px 4px 8px #000000; 
       box-shadow: 0px 1px 4px 8px #000000;
